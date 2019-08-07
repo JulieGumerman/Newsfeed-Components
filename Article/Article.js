@@ -85,6 +85,13 @@ const articleData = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Software Engineer gets 16 emails of interest',
+    date: 'August 7 , 2019',
+    firstParagraph: 'Lisa Gumerman, sister to Lambda School student Julie Gumerman, just went back on the job market and already has had sixteen emails of interest.This morning, she was at 9 emails; now she is at 16.',
+    secondParagraph: 'This is why I followed in her footsteps. I want freedom like she has.',
+    thirdParagraph: 'She started off in magazine journalism and hated it. Now, she can move anywhere in the world and get paid good money for it too! She and her husband joke, though, that you have to get a job writing a program you hate so you do not overwork yourself.'
   }
 ];
 
@@ -142,7 +149,9 @@ function createArticle(title, date, paragraph1, paragraph2, paragraph3) {
 
 
     //event handler for button
-    spanButton
+    spanButton.addEventListener("click", ()=> {
+      article.classList.toggle("article-open");
+    })
     
 
     //return
