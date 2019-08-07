@@ -85,7 +85,7 @@ const articleData = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-  },
+  }, //new article below
   {
     title: 'Software Engineer gets 16 emails of interest',
     date: 'August 7 , 2019',
@@ -145,7 +145,7 @@ function createArticle(title, date, paragraph1, paragraph2, paragraph3) {
     paragraphOne.textContent = paragraph1;
     paragraphTwo.textContent = paragraph2;
     paragraphThree.textContent = paragraph3;
-    spanButton.textContent = "a button that does stuff";
+    spanButton.textContent = "Button!";
 
 
     //event handler for button
